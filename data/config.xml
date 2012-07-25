@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<video>
+	<!--<type>file</type>-->
+	<!--<source>/home/user/Desktop/videoInput/MVI_5701.MOV</source>-->
+	<device>USB</device>
+	<source>/dev/video0</source>
+	<width>640</width>
+	<height>480</height>
+	<fullscreen>false</fullscreen>
+	<monitor>all</monitor>
+	<debug>true</debug>
+</video>
+<markers>
+	<marker>single;data/markers/pat/patt.hiro;80;0;0</marker>
+	<!--<marker>multi;data/markers/multi/marker.dat</marker>-->
+	<marker>single;data/markers/pat/flower.pat;80;0;0</marker>
+</markers>
+<slides>
+	<slide>data/images/GreenNumber.tga</slide>
+	<slide>data/models/riojaforum1/models/model.dae</slide>
+	<slide>data/models/helicoptero/helicoptero.osg</slide>
+	<slide>data/models/trex_3ds_2/T-Rex.3ds</slide>
+	<slide>data/models/flores/flor1.osg</slide>
+	<slide>data/models/flores/flor2.osg</slide>
+</slides>
