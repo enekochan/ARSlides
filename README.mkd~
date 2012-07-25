@@ -10,20 +10,20 @@ ARSlides is a Augmented Reality slide presentation application.
 DEPENDENCIES
 ============
 
-ARSlides  uses Collada-dom, ARToolKit, OpenSceneGraph and osgART
-libraries for the Augmented Reality and 3D. If you need an easy way
+ARSlides  uses Collada-dom , ARToolKit, OpenSceneGraph and osgART
+libraries for the Augmente Reality and 3D. If you need a easy way
 to install them check out my installation-scripts repository in
 https://github.com/enekochan/installation-scripts
 
-It also uses libtinyxml-dev so you'll have to install it this way:
+It also uses libtinyxml-dev so you would have to install like this:
 
- sudo apt-get install libtinyxml-dev
+sudo apt-get install libtinyxml-dev
 
 
 USE
 ===
 
-This is an Eclipse-CDT project so once you have installed all the
+This is a Eclipse-CDT project so once you have installed all the
 dependencies you should be able to open it on Eclipse-CDT and just
 build and run it.
 
