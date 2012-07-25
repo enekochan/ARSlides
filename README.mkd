@@ -17,7 +17,7 @@ https://github.com/enekochan/installation-scripts
 
 It also uses libtinyxml-dev so you'll have to install it this way:
 
- sudo apt-get install libtinyxml-dev
+    sudo apt-get install libtinyxml-dev
 
 
 USE
