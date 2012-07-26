@@ -85,6 +85,7 @@ HUD::HUD(int width, int height, int thickness) {
 
 	// Set up the parameters for the text we'll add to the HUD:
 	textOne->setCharacterSize(25);
+	//textOne->setFont("data/fonts/arial.ttf");
 	textOne->setFont("/usr/share/fonts/truetype/freefont/FreeMono.ttf");
 	textOne->setText("");
 	textOne->setAxisAlignment(osgText::Text::SCREEN);

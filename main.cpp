@@ -17,6 +17,7 @@
 
 #include "CText.h"
 #include "CPicture.h"
+#include "CMovie.h"
 #include "HUD.h"
 #include "MyMarkerVisibilityCallback.h"
 #include "MarkerProximityUpdateCallback.h"
@@ -65,6 +66,10 @@ osg::ref_ptr<osg::Node> loadNode(std::string file) {
 		osg::ref_ptr<CPicture> p = new CPicture(file, 180);
 		p->setName(extension);
 		return p;
+	} else if (extension == "avi" || extension == "mov") {
+		osg::ref_ptr<CMovie> m = new CMovie(file, false);
+		m->setName(extension);
+		return m;
 	} else {
 		// It should never reach here, but if it does a simple cube is shown (this also prevents a warning)
 		return osgART::testCube();
@@ -167,6 +172,14 @@ public:
                         std::cout << "+ LEFT key pressed" << std::endl;
                         loadPreviousObject(arSwitch);
                         return true;
+                    case ' ':
+                    	std::cout << "+ SPACE key pressed" << std::endl;
+                    	std::string extension = arSwitch->getChild(currentSlide)->getName();
+                    	if (extension == "avi" || extension == "mov") {
+                    		CMovie *m = (CMovie *)arSwitch->getChild(currentSlide);
+                    		m->pause();
+                    	}
+                    	return true;
                 }
                 default: return false;
             }
@@ -340,6 +353,12 @@ int main(int argc, char* argv[])  {
 		hud->setHUDColor(1.0, 0.0, 0.0, 0.5);
 		myMarkerVisibilityCallback->setText(hud->getTextPointer());
 	}
+
+	// Forces a OpenSceneGraph to load the ffmpeg plug-in instead of xine.
+	// You can see which plug-in is loaded executing the method libraryName() on the ImageStream object
+	std::string libName = osgDB::Registry::instance()->createLibraryNameForExtension("ffmpeg");
+	osgDB::Registry::instance()->loadLibrary(libName);
+	//osgDB::Registry::instance()->addFileExtensionAlias("mov", "qt");
 
 	currentSlide = 0;
 

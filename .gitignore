@@ -1,5 +1,19 @@
 # We don't want binaries here
 Debug
-# You may use your desired fonts but none should be uploaded here 
-*.ttf
+
+# You may use your desired fonts but none should be uploaded 
+data/fonts/*.ttf
+data/fonts/*.ttc
+
+# No videos please
+data/videos/*.avi
+data/videos/*.mov
+data/videos/*.mpg
+data/videos/*.mpeg
+data/videos/*.mp4
+
+# No sounds please
+data/sounds/*.mp3
+data/sounds/*.wav
+data/sounds/*.ogg
 

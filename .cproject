@@ -29,7 +29,7 @@
 									<listOptionValue builtIn="false" value="/usr/local/include/osgART"/>
 									<listOptionValue builtIn="false" value="/usr/local/include/osg"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.include.files.1050885738" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" valueType="includeFiles"/>
+								<option id="gnu.cpp.compiler.option.include.files.1050885738" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.100029368" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.381750301" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
