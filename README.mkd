@@ -1,5 +1,5 @@
 
-ARSlides Version 1.0 by Enekochan <http://tech.enekochan.com/>
+ARSlides Version 1.0 by Enekochan
 
 ABOUT
 =====
